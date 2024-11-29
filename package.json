@@ -1,0 +1,16 @@
+{
+  "name": "qacoders-nodejs-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start loader.js --name backend"
+  },
+  "keywords": [],
+  "author": "Tadeu Augusto Dutra Pinto",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
