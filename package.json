@@ -5,7 +5,9 @@
   "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start loader.js --name backend"
+    "production": "pm2 start loader.js --name backend",
+    "status": "pm2 status",
+    "shutdown": "pm2 delete backend"
   },
   "keywords": [],
   "author": "Tadeu Augusto Dutra Pinto",
