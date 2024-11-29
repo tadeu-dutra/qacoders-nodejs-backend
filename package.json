@@ -1,8 +1,8 @@
 {
   "name": "qacoders-nodejs-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NodeJS Backend QA Coders",
+  "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
     "production": "pm2 start loader.js --name backend"
@@ -11,6 +11,13 @@
   "author": "Tadeu Augusto Dutra Pinto",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^3.1.7"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "express-query-int": "^3.0.0",
+    "mongoose": "^4.13.21",
+    "mongoose-paginate": "^5.0.3",
+    "node-restful": "^0.2.6",
+    "nodemon": "^3.1.7",
+    "pm2": "^5.4.3"
   }
 }
