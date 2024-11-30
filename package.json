@@ -17,6 +17,7 @@
     "express": "^4.21.1",
     "express-query-int": "^3.0.0",
     "mongoose": "^4.13.21",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.6",
     "nodemon": "^3.1.7",
