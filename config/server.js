@@ -1,5 +1,5 @@
 const port = 3003;
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const express = require('express');
 const server = express();
 
@@ -10,9 +10,9 @@ server.listen(port, function() {
     console.log(`Backend running on port ${port}.`);
 });
 
-server.use(function(req, res, next) {
-    res.send('Welcome');
-    next();
-});
+// server.use(function(req, res, next) {
+//     res.send('Welcome');
+//     next();
+// });
 
-
+module.exports = server
