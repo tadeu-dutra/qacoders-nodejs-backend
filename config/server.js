@@ -15,4 +15,4 @@ server.listen(port, function() {
 //     next();
 // });
 
-module.exports = server
+module.exports = server;
