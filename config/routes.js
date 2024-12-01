@@ -9,13 +9,11 @@ module.exports = function(server) {
         res.send(`BACKEND is runner.`)
     );
 
-    // server.use('/api', router);
     const studentService = require('../api/student/studentService.js');
     studentService.register(api, '/students');
 
     const userService = require('../api/user/userService.js');
     userService.register(api, '/users');
 
-    // server.use(express.static(require('path').join(__dirname, '../public')));
     api.use(express.static(require('path').join(__dirname, '../public')));
 };

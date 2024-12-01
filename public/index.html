@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Coders</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: black;
+            animation: bgColorChange 10s infinite alternate;
+        }
+
+        @keyframes bgColorChange {
+            0% { background-color: #FF0080; }
+            25% { background-color: #FF8C00; }
+            50% { background-color: #FFD700; }
+            75% { background-color: #00FF00; }
+            100% { background-color: #0080FF; }
+        }
+
+        .psychedelic-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 5em;
+            color: white;
+            text-align: center;
+            animation: textColorChange 5s infinite alternate;
+            text-shadow: 0 0 5px #FF0080, 0 0 10px #FF0080, 0 0 15px #FF8C00, 0 0 20px #FFD700;
+        }
+
+        @keyframes textColorChange {
+            0% { color: #FF0080; }
+            25% { color: #FF8C00; }
+            50% { color: #FFD700; }
+            75% { color: #00FF00; }
+            100% { color: #0080FF; }
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            animation: pulsate 3s infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+                background-color: rgba(255, 0, 128, 0.5);
+            }
+            50% {
+                transform: scale(1.2);
+                background-color: rgba(255, 140, 0, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                background-color: rgba(255, 215, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="psychedelic-text">QA Vibes!</div>
+    <div class="circle" style="top: 20%; left: 10%;"></div>
+    <div class="circle" style="top: 50%; left: 70%;"></div>
+    <div class="circle" style="top: 30%; left: 40%;"></div>
+    <div class="circle" style="top: 80%; left: 30%;"></div>
+    <div class="circle" style="top: 60%; left: 80%;"></div>
+</body>
+</html>
