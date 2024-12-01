@@ -1,25 +1,20 @@
 # qacoders-nodejs-backend
 
-Dependencies:
-
-npm install express
-- body-parser
-- mongoose
-- node-restful
-- mongose-pagenate
-- lodash
-- express-query-int
-- pm2
-- nodemon
+API developed using Node JS, Express and MongoDB.
 
 ```bash
-npm install express body-parser mongoose node-restful mongoose-paginate express-query-int pm2 nodemon --save
-```
-
-```bash
-npm install --save mongoose-beautiful-unique-validation
-```
-
-```bash
-npm install --save bcrypt@5.0.1 jsonwebtoken@8.5.1
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-query-int": "^3.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.3",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "mongoose-paginate": "^5.0.3",
+    "nodemon": "^3.1.7",
+    "pm2": "^5.4.3"
+  }
 ```
