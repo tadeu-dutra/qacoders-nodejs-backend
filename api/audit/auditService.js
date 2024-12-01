@@ -1,5 +1,5 @@
-const Audit = require('./audit');
+// const Audit = require('./audit');
 
-Audit.methods([ 'get', 'post', 'put', 'delete' ]);
+// Audit.methods([ 'get', 'post', 'put', 'delete' ]);
 
-module.exports = Audit;
+// module.exports = Audit;
