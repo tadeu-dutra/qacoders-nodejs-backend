@@ -11,4 +11,7 @@ module.exports = function(server) {
     server.use('/api', router);
     const studentService = require('../api/student/studentService.js');
     studentService.register(router, '/students');
+
+    const userService = require('../api/user/userService.js');
+    userService.register(router, '/users');
 };

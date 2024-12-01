@@ -1,9 +1,5 @@
 const Student = require('./student');
 
-// Student.methods([ 'get', 'post', 'put', 'delete' ]);
-
-// module.exports = Student;
-
 module.exports = {
     register(router, basePath) {
         // Create a new student
