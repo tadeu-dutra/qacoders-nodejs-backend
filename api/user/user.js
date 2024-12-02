@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     registration: { type: String, required: true },
     idCompany: { type: String, required: [true, 'Field ID COMPANY is required'] },
     name: { type: String, required: [true, 'Field NAME is required'] },
-    mail: { type: String, required: [true, 'Field E-MAIL is required'], unique: true },
+    email: { type: String, required: [true, 'Field E-MAIL is required'], unique: true },
     password: { type: String, required: true, min: 4, max: 12 },
     status: { type: Boolean, required: true, default: true },
 });

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const studentSchema = new mongoose.Schema({
     name: { type: String, required: true },
     city: { type: String, required: true },
-    mail: { type: String, required: true, unique: true },
+    email: { type: String, required: true, unique: true },
     currentRole: { type: String, required: true },
     companyName: { type: String, required: false },
     reasonYouWantToParticipate: { type: String, required: false },
@@ -13,7 +13,7 @@ const studentSchema = new mongoose.Schema({
 });
 
 studentSchema.pre('save', async function(next) {
-    const existingStudent = await mongoose.model('Student').findOne({ mail: this.mail });
+    const existingStudent = await mongoose.model('Student').findOne({ email: this.email });
     if (existingStudent) {
         return next(new Error('Email already exists.'));
     }

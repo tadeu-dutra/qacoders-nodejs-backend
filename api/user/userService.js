@@ -16,9 +16,9 @@ module.exports = {
 
         // Login a user
         router.post(`${basePath}/login`, async (req, res) => {
-            const { mail, password } = req.body;
+            const { email, password } = req.body;
             try {
-                const user = await User.findOne({ mail });
+                const user = await User.findOne({ email });
                 if (!user) return res.status(400).json({ message: 'User not found' });
 
                 const isMatch = await user.comparePassword(password);

@@ -5,8 +5,8 @@ const server = express();
 const allowCors = require('./cors');
 
 server.use(express.urlencoded({ extended: true }));
-server.use(express.json());
 server.use(allowCors);
+server.use(express.json());
 server.use(express.static('public'));
 
 server.listen(port, function() {
